@@ -1,0 +1,170 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Laporan Praktik</title>
+<style>
+  body{font-family:system-ui,Segoe UI,Roboto,Arial;max-width:900px;margin:24px auto;color:#222}
+  header,h2{color:#0a58ca}
+  section{margin-bottom:18px;padding:12px;border:1px solid #e5e7eb;border-radius:6px;background:#fafafa}
+  ul,ol{margin-left:20px}
+  [contenteditable]{outline:2px dashed transparent;padding:2px}
+  [contenteditable]:focus{outline-color:#cfe2ff;background:#fff}
+  footer{display:flex;gap:8px;align-items:center}
+  button{padding:8px 12px;border-radius:6px;border:1px solid #0a58ca;background:#0a58ca;color:#fff;cursor:pointer}
+  .photo-controls{display:flex;gap:8px;align-items:center;margin-bottom:8px}
+  .gallery{display:flex;gap:12px;flex-wrap:wrap}
+  .photo{width:160px;border:1px solid #e2e8f0;border-radius:6px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+  .photo img{width:100%;height:110px;object-fit:cover;display:block}
+  .photo figcaption{padding:6px;font-size:13px;background:#fbfbff;min-height:40px}
+  .photo .remove{background:#dc3545;border:none;color:#fff;padding:6px;font-size:12px;cursor:pointer;border-radius:0 0 6px 6px}
+  input[type="file"]{display:inline-block}
+  @media print{button,input[type="file"],.remove{display:none} body{max-width:100%;margin:0} }
+</style>
+</head>
+<body>
+<header>
+  <h1 contenteditable="true">Judul Praktik: Kabel FIBER OPTIC </h1>
+  <p><strong>Nama:</strong> <span contenteditable="true">Desvino</span> &nbsp;|&nbsp; <strong>Tanggal:</strong> <span contenteditable="true">21-okt-2025</span></p>
+</header>
+
+<section>
+  <h2>Alat dan Bahan</h2>
+  <ul>
+    <li contenteditable="false">Alat 1 : optical fusion splicer </li>
+    <li contenteditable="false">Alat 2 : cleaver</li>
+    <li contenteditable="false">Alat 3 : stripper</li>
+    <li contenteditable="false">Alat 4 : stripper drop core</li>
+     <li contenteditable="false">Alat 5 : sleeve</li>
+      <li contenteditable="false">Alat 6 : tang potong</li>
+       <li contenteditable="false">Alat 7 : conector fiber optic</li>
+        <li contenteditable="false">Alat 8 : visual fault locator</li>
+    <li contenteditable="false">Bahan 1 : kabel</li>
+    <li contenteditable="false">Bahan 2 : tisu</li>
+    <li contenteditable="false">Bahan 3 : alkohol</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Langkah-langkah</h2>
+  <ol>
+    <li contenteditable="true">Siapkan semua alat dan bahan di meja kerja.</li>
+    <li contenteditable="true">Kupas secukupnya ouoter jacket fiber optic menggunakan steripper drop core sehingga bagian clodding terlihat.</li>
+    <li contenteditable="true">Kemudian kupas secukupnya bagian clodding fiber optic sehingga terlihat bagian corenya.</li>
+    <li contenteditable="true">Setelah core terlihat atau bagian clodding terkelupas, sekaarng siapkan tisu dan beri sedikit alkohol, lalu usapkan ke bagian core,
+      berfungsi untuk menghilangkan sisa sisa clodding yang masih ada.</li>
+    <li contenteditable="true">Setelah dibersihkan menggunakan alkohol, langkah selanjutnya yaitu siapkan cleaver, lalu letakan fiber optic di cleaver untuk dipotong sesuai keinginan, 
+      untuk merapikan bagian ujung fiber optic sebelum dimasukan ke dalam ofs.</li>
+      <li contenteditable="true">Setelah dipotong menggunakan cleaver, langkah selanjutnya adalah siapkan ofs, fungsinya adalah untuk menyambungkan kabel fiber optic denag fiber optic lainnya,
+        caranya adalh buka buka jepitan fiber optic terlebih dahulu, baru masukan fiber optic ke dalam dengan presisi dengan jarum penyambung, lalu lakukan yang sama pada fiber optic yang selanjutnya,
+        jika sudah presisi lalu tekan tombol bulat berwarna hijiau.</li>
+        <li contenteditable="true">Jika kabel fiber optic sudah tersambung lalu angakt sisi kedua kabel fiber optic dengan hati hati, lalu pindahkan kabel yang sudah ke tempat pembakaran dengan
+          menutupi kabel fiber optic yang sudah tersambung dengan sleeve, lalu tekan tombol dengan logo api yang gunanya untuk membakar sleeve.</li>
+          <li contenteditable="true">Jika sleeve sudah menempel core fiber optic langakh selanjutnya adalah memotong ujung kabel yang belum dibuka menggunakan stripper drop core lalu buang clading dengan
+            stripper lalu bersihkan dengan alkohol, lalu potong mengunakan claver, setelah itu siapkan conector fiber opotik dengan membuka bagian ujung bagian bawah konector dengan memutar sampai terkelupas
+            lalu tarik tuas berwarna putih pada ujung atas, jika sudah lepas lalu bagian berwarna biru lalu buka bagian bawah yang tadi sudah terbuka lalu masukan kabel fiber ooptic yang baru saja dibuka.</li>
+            <li contenteditable="true">Jika sudah dimasukan, lalu kunci dengan menaikan bagian berwarna orange, lalu tutup pada bagian ujung bawah dengan kencang, jika sudah lalu masukan conector fiber optic
+              pada ujung visual vault locator agar kita bisa tahu kalau kabel fiber optic sudah bisa digunakan, jika cahaya laser tidak terlalu membias, itu adalah hal yang sangat bagus dari penyambung kabel fiber optic.</li>
+  </ol>
+</section>
+
+<section id="fotoSection">
+  <h2>Foto Dokumentasi</h2>
+  <div class="photo-controls">
+    <input id="photoInput" type="file" accept="image/*" multiple>
+  </div>
+
+  <div class="gallery" id="gallery" aria-live="polite">
+    <!-- preview foto akan muncul di sini -->
+  </div>
+
+  <p style="font-size:13px;margin-top:10px;color:#555">
+  </p>
+</section>
+
+<footer>
+
+</footer>
+
+<script>
+const photoInput = document.getElementById('photoInput');
+const gallery = document.getElementById('gallery');
+const printBtn = document.getElementById('printBtn');
+const addFromUrlBtn = document.getElementById('addFromUrl');
+const clearAllBtn = document.getElementById('clearAll');
+
+function createPhotoElement(src){
+  const figure = document.createElement('figure');
+  figure.className = 'photo';
+
+  const img = document.createElement('img');
+  img.src = src;
+  img.alt = 'Foto dokumentasi';
+  figure.appendChild(img);
+
+  const caption = document.createElement('figcaption');
+  caption.contentEditable = 'true';
+  caption.innerText = 'Tambah keterangan...';
+  figure.appendChild(caption);
+
+  const removeBtn = document.createElement('button');
+  removeBtn.className = 'remove';
+  removeBtn.type = 'button';
+  removeBtn.innerText = 'Hapus';
+  removeBtn.addEventListener('click', ()=> {
+    URL.revokeObjectURL(img.src);
+    figure.remove();
+  });
+  figure.appendChild(removeBtn);
+
+  gallery.appendChild(figure);
+}
+
+photoInput.addEventListener('change', (e)=>{
+  const files = Array.from(e.target.files || []);
+  files.forEach(f=>{
+    if(!f.type.startsWith('image/')) return;
+    const url = URL.createObjectURL(f);
+    createPhotoElement(url);
+  });
+  photoInput.value = ''; // reset
+});
+
+addFromUrlBtn.addEventListener('click', ()=>{
+  const url = prompt('Tempel URL gambar:');
+  if(url) createPhotoElement(url);
+});
+
+clearAllBtn.addEventListener('click', ()=>{
+  if(!confirm('Hapus semua foto dari galeri?')) return;
+  gallery.querySelectorAll('.photo').forEach(el=>{
+    const img = el.querySelector('img');
+    try{ URL.revokeObjectURL(img.src); }catch{}
+    el.remove();
+  });
+});
+
+printBtn.addEventListener('click', ()=> window.print());
+
+// Optional: drag & drop ke gallery
+['dragover','dragenter'].forEach(evt => {
+  gallery.addEventListener(evt, (e)=> { e.preventDefault(); gallery.style.outline = '2px dashed #9ec5ff'; });
+});
+['dragleave','drop','dragend'].forEach(evt => {
+  gallery.addEventListener(evt, (e)=> { e.preventDefault(); gallery.style.outline = ''; });
+});
+gallery.addEventListener('drop', (e)=>{
+  const dt = e.dataTransfer;
+  if(!dt) return;
+  const files = Array.from(dt.files || []);
+  files.forEach(f=>{
+    if(!f.type.startsWith('image/')) return;
+    const url = URL.createObjectURL(f);
+    createPhotoElement(url);
+  });
+});
+</script>
+</body>
+</html>
